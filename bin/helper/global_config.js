@@ -5,6 +5,12 @@ const config = {
   port: process.env.PORT || 3001,
   apiKey: process.env.API_KEY,
   omdbUrl: process.env.OMDB_API_URL,
+  mySql: {
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE,
+  }
 };
 
 const store = new confidence.Store(config);
