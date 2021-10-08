@@ -4,6 +4,7 @@
   "description": "Stockbit Backend Node.js Task",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "lint": "eslint bin test",
     "lint:fix": "npm run lint -- --fix",
