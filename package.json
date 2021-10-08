@@ -1,0 +1,27 @@
+{
+  "name": "stockbit_test",
+  "version": "1.0.0",
+  "description": "Stockbit Backend Node.js Task",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramonivandy/stockbit_test.git"
+  },
+  "author": "Ramon Ivandy Setiawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ramonivandy/stockbit_test/issues"
+  },
+  "homepage": "https://github.com/Ramonivandy/stockbit_test#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.10",
+    "nodemon": "^2.0.12"
+  }
+}
