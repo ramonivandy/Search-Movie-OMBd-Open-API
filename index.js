@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const port = 3001;
+const config = require('./bin/helper/global_config');
+const port = config.get('/port') || 3001;
 const movieRoute = require('./bin/routes/movie');
 
 // parse requests of content-type
