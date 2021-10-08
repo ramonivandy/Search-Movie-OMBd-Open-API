@@ -4,7 +4,11 @@
   "description": "Stockbit Backend Node.js Task",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "lint": "eslint bin test",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha \"test/**/*_test.js\" --timeout=5000 --exit",
+    "cover": "nyc _mocha \"test/**/*_test.js\" --recursive --exit"
   },
   "repository": {
     "type": "git",
@@ -19,14 +23,47 @@
   "dependencies": {
     "axios": "^0.22.0",
     "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
     "confidence": "^5.0.0",
     "dotenv": "^6.1.0",
     "express": "^4.17.1",
     "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1",
+    "mocha": "^9.1.2",
     "mongodb": "^3.1.10",
     "mysql2": "^2.3.0",
     "nodemon": "^2.0.12",
-    "validate.js": "^0.13.1"
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.2",
+    "validate.js": "^0.13.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.19.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "nyc": {
+    "lines": 10,
+    "statements": 10,
+    "functions": 10,
+    "branches": 10,
+    "check-coverage": true,
+    "include": [
+      "bin/**/*.js"
+    ],
+    "exclude": [
+      "bin/app/**/*.js"
+    ],
+    "reporter": [
+      "html",
+      "text",
+      "lcov",
+      "text-summary"
+    ],
+    "all": true,
+    "cache": true,
+    "report-dir": "./coverage"
   }
 }

@@ -5,7 +5,7 @@ const isValidPayload = (payload, schema) => {
   if (!validate.isEmpty(error)) {
     return {err: error, code: 422};
   }
-  return {err: null, data: value}
+  return {err: null, data: value};
 };
 
 module.exports = {
