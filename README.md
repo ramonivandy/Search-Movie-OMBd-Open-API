@@ -8,7 +8,7 @@ Email: ramonivandysetiawan@gmail.com
 ## Installation
 
 1. Clone repository
-2. Run 
+2. Run commmand
 ```bash 
 npm install
 ```
@@ -26,3 +26,7 @@ b. ```movieName``` value to search movie based on name.
 2. Get Detail Movie ```/detail/:movieId```  
 Params:  
 a. ```movieId``` get movie detail based on id.
+
+## Postman Collection
+For Postman collection, you can import from here:
+[Postman Collection](https://www.getpostman.com/collections/62b354c37a32d6a87e4c)
