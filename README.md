@@ -1,9 +1,6 @@
 # Search Movie App
 
-Stockbit Backend Node.js Task  
-
-Name: Ramon Ivandy Setiawan  
-Email: ramonivandysetiawan@gmail.com
+Search Movie App using Open API Movie Database (OMDb API)
 
 ## Installation
 
@@ -29,4 +26,4 @@ a. ```movieId``` get movie detail based on id.
 
 ## Postman Collection
 For Postman collection, you can import from here:
-[Postman Collection](https://www.getpostman.com/collections/62b354c37a32d6a87e4c)
+[Postman Collection]([https://www.getpostman.com/collections/62b354c37a32d6a87e4c](https://elements.getpostman.com/redirect?entityId=4517781-a7aad16e-0cdf-4ca7-8251-54fae7f9abcd&entityType=collection)https://elements.getpostman.com/redirect?entityId=4517781-a7aad16e-0cdf-4ca7-8251-54fae7f9abcd&entityType=collection)
