@@ -1,5 +1,7 @@
 # Search Movie App
 
+> __This repository was created as one of the tests within Stockbit__
+
 Search Movie App using Open API Movie Database (OMDb API)
 
 ## Installation
